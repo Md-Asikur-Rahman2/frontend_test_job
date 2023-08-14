@@ -135,8 +135,11 @@ const resetFilters = () => {
       </ul>
       <div className="mt-8">
         {/* ... other filtering inputs ... */}
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-          <b>Products:</b> {currentProducts.length}
+        <h1 className="text-xl md:text-2xl lg:text-4xl font-thin mb-4">
+          <b>All Products:</b> {products && products.length}
+        </h1>
+        <h1 className="text-xl md:text-2xl lg:text-4xl font-thin mb-4">
+          <b>Filtered Products:</b> {currentProducts.length}
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
